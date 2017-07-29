@@ -1,0 +1,7 @@
+  <h3>Error Message :{{errorMsg}}</h3>
+  <h2>Employee List</h2>
+  <ul *ngFor="let employee of employees">
+	<li><a (click)="employeeEdit(employee)">{{employee.name}}</a></li>
+  </ul>
+  <employee-detail></employee-detail>
+

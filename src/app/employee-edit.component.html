@@ -1,0 +1,25 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+
+    </div>
+    <div class="panel-body" >
+        <div class="wizard">
+            <a>
+                Basic Info
+            </a>
+            <a>
+                Search tag
+            </a>
+        </div>
+        <test-app #testapp [messageData]="'Souvik'"></test-app>
+        <testb-app></testb-app>
+        <testb-app></testb-app>
+        <testb-app></testb-app>
+        <div #childContainer ></div>
+        <br>
+    
+        <button (click)="btnClick()">Click Me</button>
+        <br>
+        <button (click)="loadChild()">LOAD CHILDREN</button>
+        <router-outlet></router-outlet>
+    </div>
